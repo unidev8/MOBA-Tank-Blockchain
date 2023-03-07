@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1000013481812936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4000012160439120}
+  - component: {fileID: 114000011365822250}
+  - component: {fileID: 114000010886265526}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012160439120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013481812936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000011365822250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013481812936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a55adfe3d000247b07d5f9373dd1eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localPlayer: {fileID: 0}
+  gameMode: 0
+  ui: {fileID: 0}
+  teams:
+  - name: RED
+    material: {fileID: 2100000, guid: bd77ec7e7c2bcec498601902e4b6e28d, type: 2}
+    color: {r: 1, g: 0.0047169924, b: 0.0047169924, a: 1}
+    customMaterial:
+    - {fileID: 2100000, guid: 6b0ca6f4388f37848be91d35fdbf8fb9, type: 2}
+    - {fileID: 2100000, guid: 2e70b21b15c5a3a4dbdbec00f0153eb3, type: 2}
+    - {fileID: 2100000, guid: 0388ac5777cfaca4ea84eeb274144fa3, type: 2}
+    - {fileID: 2100000, guid: a9d5433b17884344a9faef2021e73f84, type: 2}
+    - {fileID: 2100000, guid: 504f8f6209088034a9bd930be9ae0779, type: 2}
+    spawn: {fileID: 0}
+  - name: BLUE
+    material: {fileID: 2100000, guid: c97449f961d124745bc2d7c5972ddd91, type: 2}
+    color: {r: 0, g: 0, b: 1, a: 1}
+    customMaterial:
+    - {fileID: 2100000, guid: 7c475a401e43f3a449575525bc4ac39c, type: 2}
+    - {fileID: 2100000, guid: f4b91c4de51b16743b0bc655a7356ac2, type: 2}
+    - {fileID: 2100000, guid: 0c89ea1d067e8554c83870efb6662d4d, type: 2}
+    - {fileID: 2100000, guid: 2f696db85308acd46bd191cabe85e11f, type: 2}
+    - {fileID: 2100000, guid: ed016aee40e195a4697b9cc3943e76bf, type: 2}
+    spawn: {fileID: 0}
+  - name: GREEN
+    material: {fileID: 2100000, guid: 5942ca0d18e9eeb47b312e51dec49088, type: 2}
+    color: {r: 0.052918315, g: 1, b: 0, a: 1}
+    customMaterial:
+    - {fileID: 2100000, guid: a9560281cdafb584dbf7b3c4d314c6a8, type: 2}
+    - {fileID: 2100000, guid: 1a86e30f0c866c243aa42724a90b7b58, type: 2}
+    - {fileID: 2100000, guid: 9ba462a2338d5094a9cb35ce894a52ca, type: 2}
+    - {fileID: 2100000, guid: 1b9c6baee8fff3b439f35bed988af5bf, type: 2}
+    - {fileID: 2100000, guid: 3a2fc5eb7aa3d7543b8e0d45526f6b30, type: 2}
+    spawn: {fileID: 0}
+  - name: YELLOW
+    material: {fileID: 2100000, guid: c4d04e17f416e5748ad3b305797df88b, type: 2}
+    color: {r: 1, g: 0.98475426, b: 0, a: 1}
+    customMaterial:
+    - {fileID: 2100000, guid: 92f5d66755676814c8cca94421361eb2, type: 2}
+    - {fileID: 2100000, guid: f697cd6aa0b12e949a89aff462888036, type: 2}
+    - {fileID: 2100000, guid: 57b32ef2255547142b22c0aa75a4f6cb, type: 2}
+    - {fileID: 2100000, guid: c4ad9bc91c01b71488b489df6095f392, type: 2}
+    - {fileID: 2100000, guid: fe7ec5b7fb4445e4883f5a04d143f03a, type: 2}
+    spawn: {fileID: 0}
+  maxScore: 30
+  respawnTime: 8
+  friendlyFire: 0
+  botMap:
+  - {fileID: 0}
+--- !u!114 &114000010886265526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013481812936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cf73e5ab70f4048b5c65dc1f5679e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBots: 7
+  prefabs:
+  - {fileID: 1000013172141970, guid: 5f4af36db6797b24bbb16b8aada3e087, type: 3}
+  - {fileID: 1000013952619036, guid: 7c5bc23e033f3ec4982442db246e19c9, type: 3}
+  - {fileID: 1000011908511644, guid: 8be7517548c45f04e94cf617523cc394, type: 3}
