@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: dd0dd5e4ad1eeac4da342bf8d14df23a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Waukegan LDO Extended
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c9385ef06b998114ab33469e011044ce, type: 3}
+  - {fileID: 12800000, guid: 55cd419256eca314c8b5c5ab1a761c47, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
